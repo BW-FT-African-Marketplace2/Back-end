@@ -1,4 +1,4 @@
-package com.lambdaschool.usermodel.config;
+package backend.lambdaschool.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

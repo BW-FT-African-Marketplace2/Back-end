@@ -1,7 +1,7 @@
-package com.lambdaschool.usermodel.controllers;
+package backend.lambdaschool.controllers;
 
-import com.lambdaschool.usermodel.models.Useremail;
-import com.lambdaschool.usermodel.services.UseremailService;
+import backend.lambdaschool.models.Useremail;
+import backend.lambdaschool.services.UseremailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

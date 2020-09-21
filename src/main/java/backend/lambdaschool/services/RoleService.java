@@ -1,6 +1,7 @@
-package com.lambdaschool.usermodel.services;
+package backend.lambdaschool.services;
 
-import com.lambdaschool.usermodel.models.Role;
+
+import backend.lambdaschool.models.Role;
 
 import java.util.List;
 

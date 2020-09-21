@@ -1,14 +1,13 @@
-package com.lambdaschool.usermodel.services;
+package backend.lambdaschool.services;
 
-import com.lambdaschool.usermodel.exceptions.ResourceNotFoundException;
-import com.lambdaschool.usermodel.models.User;
-import com.lambdaschool.usermodel.repository.UserRepository;
+import backend.lambdaschool.exceptions.ResourceNotFoundException;
+import backend.lambdaschool.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
+import backend.lambdaschool.models.User;
 // make sure the user that is in the import be the one from this application, not core security
 // import org.springframework.security.core.userdetails.User;
 

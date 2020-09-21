@@ -1,4 +1,4 @@
-package com.lambdaschool.usermodel.models;
+package backend.lambdaschool.models;
 
 import javax.validation.constraints.Email;
 

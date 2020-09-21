@@ -1,14 +1,14 @@
-package com.lambdaschool.usermodel;
+package backend.lambdaschool;
 
 import com.github.javafaker.Faker;
 import com.github.javafaker.service.FakeValuesService;
 import com.github.javafaker.service.RandomService;
-import com.lambdaschool.usermodel.models.Role;
-import com.lambdaschool.usermodel.models.User;
-import com.lambdaschool.usermodel.models.UserRoles;
-import com.lambdaschool.usermodel.models.Useremail;
-import com.lambdaschool.usermodel.services.RoleService;
-import com.lambdaschool.usermodel.services.UserService;
+import backend.lambdaschool.models.Role;
+import backend.lambdaschool.models.User;
+import backend.lambdaschool.models.UserRoles;
+import backend.lambdaschool.models.Useremail;
+import backend.lambdaschool.services.RoleService;
+import backend.lambdaschool.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

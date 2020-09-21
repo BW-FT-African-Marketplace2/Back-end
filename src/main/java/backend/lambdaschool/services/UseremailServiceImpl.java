@@ -1,13 +1,11 @@
-package com.lambdaschool.usermodel.services;
-
-import com.lambdaschool.usermodel.models.User;
-import com.lambdaschool.usermodel.models.Useremail;
-import com.lambdaschool.usermodel.repository.UseremailRepository;
+package backend.lambdaschool.services;
+import backend.lambdaschool.models.User;
+import backend.lambdaschool.models.Useremail;
+import backend.lambdaschool.repository.UseremailRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.lambdaschool.usermodel.exceptions.ResourceNotFoundException;
+import backend.lambdaschool.exceptions.ResourceNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 

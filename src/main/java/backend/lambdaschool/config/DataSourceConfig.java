@@ -1,4 +1,4 @@
-package com.lambdaschool.usermodel.config;
+package backend.lambdaschool.config;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;

@@ -1,7 +1,5 @@
-package com.lambdaschool.usermodel.services;
-
-import com.lambdaschool.usermodel.models.Useremail;
-
+package backend.lambdaschool.services;
+import backend.lambdaschool.models.Useremail;
 import java.util.List;
 
 

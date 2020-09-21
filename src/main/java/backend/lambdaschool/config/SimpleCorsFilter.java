@@ -1,4 +1,4 @@
-package com.lambdaschool.usermodel.config;
+package backend.lambdaschool.config;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;

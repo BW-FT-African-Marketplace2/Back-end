@@ -1,10 +1,10 @@
-package com.lambdaschool.usermodel.controllers;
+package backend.lambdaschool.controllers;
 
-import com.lambdaschool.usermodel.models.User;
-import com.lambdaschool.usermodel.models.UserMinimum;
-import com.lambdaschool.usermodel.models.UserRoles;
-import com.lambdaschool.usermodel.services.RoleService;
-import com.lambdaschool.usermodel.services.UserService;
+import backend.lambdaschool.models.User;
+import backend.lambdaschool.models.UserMinimum;
+import backend.lambdaschool.models.UserRoles;
+import backend.lambdaschool.services.RoleService;
+import backend.lambdaschool.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;

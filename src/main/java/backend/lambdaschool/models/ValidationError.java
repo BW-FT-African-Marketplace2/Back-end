@@ -1,4 +1,4 @@
-package com.lambdaschool.usermodel.models;
+package backend.lambdaschool.models;
 
 /**
  * A model to report a validation error

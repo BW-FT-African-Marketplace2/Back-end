@@ -1,7 +1,8 @@
-package com.lambdaschool.usermodel.services;
+package backend.lambdaschool.services;
 
-import com.lambdaschool.usermodel.exceptions.ResourceNotFoundException;
-import com.lambdaschool.usermodel.models.ValidationError;
+import backend.lambdaschool.models.ValidationError;
+import backend.lambdaschool.exceptions.ResourceNotFoundException;
+
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;

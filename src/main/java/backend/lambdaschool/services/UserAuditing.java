@@ -1,4 +1,4 @@
-package com.lambdaschool.usermodel.services;
+package backend.lambdaschool.services;
 
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.security.core.Authentication;

@@ -1,6 +1,6 @@
-package com.lambdaschool.usermodel.repository;
+package backend.lambdaschool.repository;
 
-import com.lambdaschool.usermodel.models.Role;
+import backend.lambdaschool.models.Role;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

@@ -1,9 +1,9 @@
-package com.lambdaschool.usermodel.handlers;
+package backend.lambdaschool.handlers;
 
-import com.lambdaschool.usermodel.exceptions.ResourceFoundException;
-import com.lambdaschool.usermodel.exceptions.ResourceNotFoundException;
-import com.lambdaschool.usermodel.models.ErrorDetail;
-import com.lambdaschool.usermodel.services.HelperFunctions;
+import backend.lambdaschool.exceptions.ResourceFoundException;
+import backend.lambdaschool.exceptions.ResourceNotFoundException;
+import backend.lambdaschool.models.ErrorDetail;
+import backend.lambdaschool.services.HelperFunctions;
 import org.springframework.beans.ConversionNotSupportedException;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.beans.factory.annotation.Autowired;

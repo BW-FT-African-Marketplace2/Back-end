@@ -6,4 +6,4 @@
  *
  * @author John Mitchell (john@lambdaschool.com) with Lambda School unless otherwise noted.
  */
-package com.lambdaschool.usermodel.config;
+package backend.lambdaschool.config;

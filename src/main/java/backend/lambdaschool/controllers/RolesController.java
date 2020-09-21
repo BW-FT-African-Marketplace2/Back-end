@@ -1,7 +1,7 @@
-package com.lambdaschool.usermodel.controllers;
+package backend.lambdaschool.controllers;
 
-import com.lambdaschool.usermodel.models.Role;
-import com.lambdaschool.usermodel.services.RoleService;
+import backend.lambdaschool.models.Role;
+import backend.lambdaschool.services.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

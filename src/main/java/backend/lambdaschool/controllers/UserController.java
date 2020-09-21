@@ -1,7 +1,7 @@
-package com.lambdaschool.usermodel.controllers;
+package backend.lambdaschool.controllers;
 
-import com.lambdaschool.usermodel.models.User;
-import com.lambdaschool.usermodel.services.UserService;
+import backend.lambdaschool.models.User;
+import backend.lambdaschool.services.UserService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;

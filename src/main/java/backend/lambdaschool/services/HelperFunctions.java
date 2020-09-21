@@ -1,6 +1,6 @@
-package com.lambdaschool.usermodel.services;
+package backend.lambdaschool.services;
 
-import com.lambdaschool.usermodel.models.ValidationError;
+import backend.lambdaschool.models.ValidationError;
 
 import java.util.List;
 

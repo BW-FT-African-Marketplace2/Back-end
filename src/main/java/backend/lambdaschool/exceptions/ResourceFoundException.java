@@ -1,4 +1,4 @@
-package com.lambdaschool.usermodel.exceptions;
+package backend.lambdaschool.exceptions;
 
 /**
  * A custom exception to be used when a resource is found but is not suppose to be

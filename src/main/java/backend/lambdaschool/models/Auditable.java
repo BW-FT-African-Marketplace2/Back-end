@@ -1,4 +1,4 @@
-package com.lambdaschool.usermodel.models;
+package backend.lambdaschool.models;
 
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;

@@ -1,6 +1,6 @@
-package com.lambdaschool.usermodel.repository;
+package backend.lambdaschool.repository;
 
-import com.lambdaschool.usermodel.models.User;
+import backend.lambdaschool.models.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
