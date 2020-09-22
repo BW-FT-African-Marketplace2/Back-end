@@ -111,7 +111,7 @@
     </dependencies>
 
     <build>
-        <finalName>african-market</finalName>
+        <finalName>african-market-2</finalName>
 
         <plugins>
             <plugin>
