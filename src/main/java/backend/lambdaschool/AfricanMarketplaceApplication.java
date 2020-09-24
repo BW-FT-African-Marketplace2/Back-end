@@ -53,7 +53,6 @@ public class AfricanMarketplaceApplication
         // Check to see if the environment variables exists. If they do not, stop execution of application.
         checkEnvironmentVariable("OAUTHCLIENTID");
         checkEnvironmentVariable("OAUTHCLIENTSECRET");
-
         if (!stop)
         {
             SpringApplication.run(AfricanMarketplaceApplication.class,

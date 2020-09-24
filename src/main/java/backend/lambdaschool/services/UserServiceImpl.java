@@ -1,15 +1,14 @@
 package backend.lambdaschool.services;
 
 import backend.lambdaschool.exceptions.ResourceNotFoundException;
-import backend.lambdaschool.models.Role;
-import backend.lambdaschool.models.User;
-import backend.lambdaschool.models.UserRoles;
-import backend.lambdaschool.models.Useremail;
+import backend.lambdaschool.models.*;
+import backend.lambdaschool.repository.ItemRepo;
 import backend.lambdaschool.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,12 +1,10 @@
 package backend.lambdaschool;
 
+import backend.lambdaschool.models.*;
+import backend.lambdaschool.services.ItemService;
 import com.github.javafaker.Faker;
 import com.github.javafaker.service.FakeValuesService;
 import com.github.javafaker.service.RandomService;
-import backend.lambdaschool.models.Role;
-import backend.lambdaschool.models.User;
-import backend.lambdaschool.models.UserRoles;
-import backend.lambdaschool.models.Useremail;
 import backend.lambdaschool.services.RoleService;
 import backend.lambdaschool.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +21,7 @@ import java.util.Locale;
  * after the application context has been loaded.
  */
 @Transactional
-//@Component
+@Component
 public class SeedData
         implements CommandLineRunner
 {
@@ -38,6 +36,9 @@ public class SeedData
      */
     @Autowired
     UserService userService;
+
+    @Autowired
+    ItemService itemService;
 
     /**
      * Generates test, seed data for our application
@@ -55,6 +56,7 @@ public class SeedData
     {
         userService.deleteAll();
         roleService.deleteAll();
+        itemService.deleteAllItems();
         Role r1 = new Role("admin");
         Role r2 = new Role("user");
         Role r3 = new Role("data");
@@ -126,33 +128,19 @@ public class SeedData
                 .add(new UserRoles(u5, r2));
         userService.save(u5);
 
-        if (false)
-        {
-            // using JavaFaker create a bunch of regular users
-            // https://www.baeldung.com/java-faker
-            // https://www.baeldung.com/regular-expressions-java
+        Item i1 = new Item("macbook pro","laptop","this is dummy data","af",1000,u1);
+        i1= itemService.save(i1);
 
-            FakeValuesService fakeValuesService = new FakeValuesService(new Locale("en-US"),
-                                                                        new RandomService());
-            Faker nameFaker = new Faker(new Locale("en-US"));
+        Item i2 = new Item("Gaming desktop","furniture","Smooth, steady, and modern","AF",400,u2);
+        i2 = itemService.save(i2);
 
-            for (int i = 0; i < 25; i++)
-            {
-                new User();
-                User fakeUser;
+        Item i3 = new Item("65 Inch Tv","Acer","1ms, 144hz, 4k, curved","AF",1200,u3);
+        i3 = itemService.save(i3);
 
-                fakeUser = new User(nameFaker.name()
-                                            .username(),
-                                    "password",
-                                    nameFaker.internet()
-                                            .emailAddress());
-                fakeUser.getRoles()
-                        .add(new UserRoles(fakeUser, r2));
-                fakeUser.getUseremails()
-                        .add(new Useremail(fakeUser,
-                                           fakeValuesService.bothify("????##@gmail.com")));
-                userService.save(fakeUser);
-            }
-        }
+        Item i4 = new Item("Punching Bag","Nike","100 pounds, red and black leather ","AF",100,u4);
+        i4 = itemService.save(i4);
+
+        Item i5 = new Item("Protein Sharms","Research","Not meant for human consuming, research purposes only 15mL","AF",89,u5);
+        i5 = itemService.save(i5);
     }
 }

@@ -1,4 +1,5 @@
 package backend.lambdaschool.services;
+import backend.lambdaschool.models.Item;
 import backend.lambdaschool.models.User;
 import java.util.List;
 

@@ -6,14 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.Email;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -32,6 +25,7 @@ public class User
      * The primary key (long) of the users table.
      */
     @Id
+    @Column(unique = true)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long userid;
 
@@ -76,6 +70,21 @@ public class User
     @JsonIgnoreProperties(value = "user", allowSetters = true)
     private Set<UserRoles> roles = new HashSet<>();
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    @JsonIgnoreProperties("user")
+    private List<Item> items = new ArrayList<>();
+//    @ManyToMany(mappedBy = "users")
+//    @JsonIgnoreProperties("users")
+//    private List<Item> items = new ArrayList<>();
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
+
     /**
      * Default constructor used primarily by the JPA.
      */
@@ -101,6 +110,14 @@ public class User
         setPassword(password);
         this.primaryemail = primaryemail;
     }
+
+//    public List<Item> getItems() {
+//        return items;
+//    }
+//
+//    public void setItems(List<Item> items) {
+//        this.items = items;
+//    }
 
     /**
      * Getter for userid
