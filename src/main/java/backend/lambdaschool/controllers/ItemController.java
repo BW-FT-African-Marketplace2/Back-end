@@ -18,7 +18,7 @@ public class ItemController {
 
     @GetMapping(value = "/items", produces = "application/json")
     public ResponseEntity<?> listAllItems(){
-        List<Item> myList = itemservice.listAllItems();
+        List<Item> myList = itemservice.findAll();
         return new ResponseEntity<>(myList, HttpStatus.OK);
     }
     @DeleteMapping(value = "/item/{itemcode}")

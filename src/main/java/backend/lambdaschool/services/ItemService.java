@@ -11,6 +11,8 @@ public interface ItemService {
     void deleteAllItems();
     Item findItemById(long id);
 
+    List<Item> findAll();
+
     void delete(long itemcode);
 }
 

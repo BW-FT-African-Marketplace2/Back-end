@@ -34,6 +34,14 @@ public class ItemServiceImpl implements ItemService{
         itemrepo.findAll().iterator().forEachRemaining(list::add);
         return list;
     }
+
+    @Override
+    public List<Item> findAll() {
+        List<Item> list = new ArrayList<>();
+        itemrepo.findAll().iterator().forEachRemaining(list::add);
+        return list;
+    }
+
     @Transactional
     @Override
     public void deleteAllItems() {
